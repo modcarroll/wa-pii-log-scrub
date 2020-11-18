@@ -1,6 +1,6 @@
 # Watson Assistant PII Log Scrubber
 
-PII scrubbing for Watson Assistant logs
+Rudimentary Python PII scrubbing for Watson Assistant logs using (scrubadub)[https://pypi.org/project/scrubadub/]
 
 1.) Clone the repository
 
