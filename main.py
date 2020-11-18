@@ -1,7 +1,8 @@
 import scrubadub
 import json
 
-inputFile = open('data/morgantownlogs.json')
+inputString = "data/morgantownlogs.json"
+inputFile = open(inputString)
 jsonText = json.load(inputFile)
 
 for item in jsonText:
@@ -19,5 +20,5 @@ for item in jsonText:
 
     item['response']['input']['text'] = scrubadub.clean(json.dumps(item['response']['input']['text']), replace_with='placeholder')
 
-with open("data/morgantownlogs.json", "w") as inputFile:
+with open(inputString, "w") as inputFile:
     json.dump(jsonText, inputFile)
